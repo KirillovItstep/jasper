@@ -23,7 +23,7 @@ public class ReportController {
     public String report(){
         List<Customer> customers = customerService.findAll();
         try {
-            reportService.export(customers, "report2.jrxml", "customers.html");
+            reportService.export(customers, "report.jrxml", "customers.html");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (JRException e) {
