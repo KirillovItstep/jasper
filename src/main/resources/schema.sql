@@ -59,7 +59,7 @@ CREATE TABLE orders (
 /* Table: order_details */
 CREATE TABLE order_details (
        order_id            INT NOT NULL,
-       product_id          INT ,
+       product_id          INT NOT NULL,
        quantity            DECIMAL(18,4) NOT NULL DEFAULT '0.0000',
        unit_price          DECIMAL(19,4) NULL DEFAULT '0.0000',
        discount            DOUBLE NOT NULL DEFAULT '0',

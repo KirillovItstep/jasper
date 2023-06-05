@@ -1,4 +1,4 @@
-package org.itstep;
+package org.itstep.customer;
 
 import lombok.Data;
 

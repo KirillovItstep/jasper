@@ -1,4 +1,4 @@
-package org.itstep;
+package org.itstep.customer;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
@@ -18,11 +18,4 @@ public class CustomerService {
     public List<Customer> orderBy(String property){
         return customerRepository.findAll(Sort.by(Sort.Direction.ASC, property));
     }
-
-
-    public List<Customer> findByFirstName(String property){
-        return customerRepository.findByFirstName();
-    }
-
-
 }

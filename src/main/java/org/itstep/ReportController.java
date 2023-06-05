@@ -1,6 +1,8 @@
 package org.itstep;
 
 import net.sf.jasperreports.engine.JRException;
+import org.itstep.customer.Customer;
+import org.itstep.customer.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
